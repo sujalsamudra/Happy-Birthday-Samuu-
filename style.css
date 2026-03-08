@@ -1,0 +1,143 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+
+font-family:'Segoe UI',sans-serif;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(rgba(128,0,32,0.6),rgba(255,77,136,0.6)),
+url("bg2.jpg");
+
+background-size:cover;
+background-position:center;
+
+}
+
+/* Card */
+
+.card{
+
+width:90%;
+max-width:340px;
+
+padding:35px;
+text-align:center;
+
+border-radius:20px;
+color:white;
+
+background:linear-gradient(145deg,#800020,#a0002a);
+
+box-shadow:0 0 40px rgba(255,105,180,0.5);
+
+}
+
+/* Text */
+
+h1{
+
+font-size:22px;
+margin-bottom:10px;
+
+}
+
+.sub{
+
+font-size:14px;
+margin-bottom:25px;
+
+}
+
+/* Button */
+
+button{
+
+padding:10px 22px;
+
+background:#ff4d88;
+color:white;
+
+border:none;
+border-radius:25px;
+
+cursor:pointer;
+font-size:14px;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+background:#ff1e6b;
+transform:scale(1.05);
+
+}
+
+/* Photo */
+
+.Photo{
+
+width:180px;
+height:180px;
+
+border-radius:50%;
+object-fit:cover;
+
+margin:20px auto;
+
+display:block;
+
+border:4px solid #ffccd5;
+
+}
+
+/* Surprise hidden */
+
+#surprise{
+
+display:none;
+
+}
+
+/* Hearts */
+
+.hearts{
+
+position:fixed;
+bottom:-20px;
+
+animation:floatUp linear forwards;
+
+pointer-events:none;
+
+}
+
+@keyframes floatUp{
+
+from{
+
+transform:translateY(0) scale(1);
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-110vh) scale(1.6);
+opacity:0;
+
+}
+
+}
